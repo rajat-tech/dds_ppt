@@ -1,19 +1,33 @@
 <html>
-  <head>
-    <script src='https://public.tableau.com/javascripts/api/v8/tableau-2.min.js'></script>
-  </head>
-  <body>
-    <div id='tableauStory'></div>
-    <script type='text/javascript'>
-      var placeholderDiv = document.getElementById('tableauStory');
-      var url = 'https://public.tableau.com/shared/NSY4P8NXT?:display_count=n&:origin=viz_share_link';
-      var options = {
-        hideTabs: true,
-        onFirstInteractive: function() {
-          console.log('Tableau Story has loaded.');
-        }
-      };
-      var viz = new tableau.Viz(placeholderDiv, url, options);
-    </script>
-  </body>
+   <head>
+      <title>Tableau Story - NSY4P8NXT</title>
+      <style>
+         body {
+            background-color: #F2F2F2;
+            font-family: Arial, sans-serif;
+         }
+         h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+            padding: 50px 0;
+         }
+         .tableau-container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 50px 0;
+         }
+         iframe {
+            border: none;
+            width: 100%;
+            height: 800px;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Data Breach - DDS PPT</h1>
+      <div class="tableau-container">
+         <iframe src="https://public.tableau.com/shared/NSY4P8NXT?:display_count=n&:origin=viz_share_link"></iframe>
+      </div>
+   </body>
 </html>
